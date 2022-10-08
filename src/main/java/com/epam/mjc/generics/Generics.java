@@ -9,7 +9,7 @@ public class Generics {
     public <T> List<T> boxingMethod(String name) {
         List firstList = new ArrayList<T>();
         firstList.add(name);
-        List secondList = new ArrayList<T>();
+        List secondList = new ArrayList<ArrayList<T>>();
         secondList.add(firstList);
         return secondList;
     }
